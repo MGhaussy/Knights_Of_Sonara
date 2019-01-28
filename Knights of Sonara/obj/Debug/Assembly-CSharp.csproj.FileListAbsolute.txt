@@ -166,7 +166,3 @@ C:\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.csproj.CoreComp
 C:\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.dll
 C:\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.pdb
-D:\Users\Jonny\Documents\Learning\Unity\Projects\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-D:\Users\Jonny\Documents\Learning\Unity\Projects\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-D:\Users\Jonny\Documents\Learning\Unity\Projects\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.dll
-D:\Users\Jonny\Documents\Learning\Unity\Projects\Knights_Of_Sonara\Knights of Sonara\obj\Debug\Assembly-CSharp.pdb
