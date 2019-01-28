@@ -27,7 +27,7 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                Debug.Log("You missed!");
+                //Debug.Log("You missed!");
                 //Harm Player or something
             }
         }
@@ -41,7 +41,7 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                Debug.Log("You missed!");
+                //Debug.Log("You missed!");
                 //Harm Player or something
             }
 
@@ -56,7 +56,7 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                Debug.Log("You missed!");
+                //Debug.Log("You missed!");
                 //Harm Player or something
             }
 
@@ -71,7 +71,7 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                Debug.Log("You missed!");
+                //Debug.Log("You missed!");
                 //Harm Player or something
             }
 
@@ -86,7 +86,7 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                Debug.Log("You missed!");
+                //Debug.Log("You missed!");
                 //Harm Player or something
             }
 
