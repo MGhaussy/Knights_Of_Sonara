@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NoteTranslation : MonoBehaviour {
 
+    //scrolling speed
     public float noteVelocity = 4.0f;
 
     // Use this for initialization
@@ -14,11 +15,13 @@ public class NoteTranslation : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Translate((new Vector3(-1, 0, 0) * noteVelocity) * Time.deltaTime);
+        //scrolling function
+        transform.Translate((Vector2.left * noteVelocity) * Time.deltaTime);
     }
 
     void OnBecameInvisible()
     {
+        //Destroy note when out of camera range
         Destroy(gameObject);
     }
 }
