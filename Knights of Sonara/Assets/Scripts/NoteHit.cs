@@ -5,23 +5,24 @@ using UnityEngine;
 public class NoteHit : MonoBehaviour
 {
     public HealthBar healthBar;
+    public ManageController inputManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (this.gameObject.name == "Note Hitbox A")
         {
-            if (Input.GetKeyDown("1") == true)
+            if (Input.GetKeyDown(inputManager.KeysToUse[0]) == true)
             {
                 Destroy(collision.gameObject);
                 Debug.Log("Nice Hit!");
@@ -35,7 +36,7 @@ public class NoteHit : MonoBehaviour
 
         if (this.gameObject.name == "Note Hitbox B")
         {
-            if (Input.GetKeyDown("2") == true)
+            if (Input.GetKeyDown(inputManager.KeysToUse[1]) == true)
             {
                 Destroy(collision.gameObject);
                 Debug.Log("Nice Hit!");
@@ -50,7 +51,7 @@ public class NoteHit : MonoBehaviour
 
         if (this.gameObject.name == "Note Hitbox C")
         {
-            if (Input.GetKeyDown("3") == true)
+            if (Input.GetKeyDown(inputManager.KeysToUse[2]) == true)
             {
                 Destroy(collision.gameObject);
                 Debug.Log("Nice Hit!");
@@ -65,7 +66,7 @@ public class NoteHit : MonoBehaviour
 
         if (this.gameObject.name == "Note Hitbox D")
         {
-            if (Input.GetKeyDown("4") == true)
+            if (Input.GetKeyDown(inputManager.KeysToUse[3]) == true)
             {
                 Destroy(collision.gameObject);
                 Debug.Log("Nice Hit!");
@@ -80,7 +81,7 @@ public class NoteHit : MonoBehaviour
 
         if (this.gameObject.name == "Note Hitbox E")
         {
-            if (Input.GetKeyDown("5") == true)
+            if (Input.GetKeyDown(inputManager.KeysToUse[4]) == true)
             {
                 Destroy(collision.gameObject);
                 Debug.Log("Nice Hit!");

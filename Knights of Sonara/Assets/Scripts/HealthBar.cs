@@ -11,16 +11,8 @@ public class HealthBar : MonoBehaviour
 
     public bool IsSubtractingHealth
     {
-        get
-        {
-            //Some other code
-            return isSubtractingHealth;
-        }
-        set
-        {
-            //Some other code
-            isSubtractingHealth = value;
-        }
+        get { return isSubtractingHealth; }
+        set { isSubtractingHealth = value; }
     }
 
     // Start is called before the first frame update
@@ -53,7 +45,6 @@ public class HealthBar : MonoBehaviour
         if (currentHealth > 0 && !isSubtractingHealth)
         {
             currentHealth -= howMuchHealth;
-            Debug.Log(currentHealth);
             updateHealthSize();
         }
     }

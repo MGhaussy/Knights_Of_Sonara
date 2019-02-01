@@ -124,8 +124,9 @@ GameObject:
   - component: {fileID: 110393637}
   - component: {fileID: 110393639}
   - component: {fileID: 110393640}
+  - component: {fileID: 110393641}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,6 +229,30 @@ MonoBehaviour:
   TempoLine: {fileID: 2312545832023235589, guid: e3272310c8987264196718322bff592a,
     type: 3}
   row3: {fileID: 734748419}
+--- !u!114 &110393641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110393636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606427262ab929f498ef13265aba4e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyboardKeys:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  controllerKeys:
+  - joystick button 7
+  - joystick button 3
+  - joystick button 2
+  - joystick button 1
+  - joystick button 6
 --- !u!1 &125359950
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +339,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox D
@@ -354,16 +392,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.0000011
       objectReference: {fileID: 0}
-    - target: {fileID: 58162831469300660, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 455650951}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: controllerManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 50576043306999940, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
 --- !u!1 &444886432
@@ -824,6 +872,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox E
@@ -864,16 +925,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.0000011
       objectReference: {fileID: 0}
-    - target: {fileID: 58162831469300660, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 455650951}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: controllerManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 50576043306999940, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
 --- !u!1001 &905691936
@@ -883,6 +954,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox B
@@ -919,16 +1003,26 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 58162831469300660, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 455650951}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: controllerManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 50576043306999940, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
 --- !u!1 &991272585
@@ -1150,6 +1244,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox A
@@ -1186,16 +1293,26 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 58162831469300660, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 455650951}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: controllerManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 50576043306999940, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
 --- !u!4 &1308167273 stripped
@@ -1404,6 +1521,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox C
@@ -1444,15 +1574,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.0000011
       objectReference: {fileID: 0}
-    - target: {fileID: 58162831469300660, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 455650951}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: controllerManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 114764874171110322, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 110393641}
+    - target: {fileID: 50576043306999940, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}

@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\ManageController.cs" />
     <Compile Include="Assets\Scripts\NoteHit.cs" />
     <Compile Include="Assets\Scripts\NoteSpawnerScript.cs" />
     <Compile Include="Assets\Scripts\NoteTranslation.cs" />
