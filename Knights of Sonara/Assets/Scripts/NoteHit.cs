@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NoteHit : MonoBehaviour
 {
+    public HealthBar healthBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +28,8 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                //Debug.Log("You missed!");
-                //Harm Player or something
+                healthBar.subtractHealth(1);
+                healthBar.IsSubtractingHealth = true;
             }
         }
 
@@ -41,8 +42,8 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                //Debug.Log("You missed!");
-                //Harm Player or something
+                healthBar.subtractHealth(1);
+                healthBar.IsSubtractingHealth = true;
             }
 
         }
@@ -56,8 +57,8 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                //Debug.Log("You missed!");
-                //Harm Player or something
+                healthBar.subtractHealth(1);
+                healthBar.IsSubtractingHealth = true;
             }
 
         }
@@ -71,8 +72,8 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                //Debug.Log("You missed!");
-                //Harm Player or something
+                healthBar.subtractHealth(1);
+                healthBar.IsSubtractingHealth = true;
             }
 
         }
@@ -86,11 +87,20 @@ public class NoteHit : MonoBehaviour
             }
             else
             {
-                //Debug.Log("You missed!");
-                //Harm Player or something
+                healthBar.subtractHealth(1);
+                healthBar.IsSubtractingHealth = true;
             }
 
         }
         //Debug.Log(this.gameObject.name);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (this.gameObject.name == "Note Hitbox A" || this.gameObject.name == "Note Hitbox B" || this.gameObject.name == "Note Hitbox C"
+            || this.gameObject.name == "Note Hitbox D" || this.gameObject.name == "Note Hitbox E")
+        {
+            healthBar.IsSubtractingHealth = false;
+        }
     }
 }
