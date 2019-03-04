@@ -14,6 +14,9 @@ public class NoteSpawnerScript : MonoBehaviour {
     public GameObject row4;
     public GameObject row5;
 
+    public List<Sprite> joystickSymbols;
+
+
     //List holding spawners' positions
     private List<Transform> spawnPoints;
 
@@ -43,7 +46,9 @@ public class NoteSpawnerScript : MonoBehaviour {
         //Getting one of the spawners, randomly
         int index = Random.Range(0, spawnPoints.Count);
         //generate a new GameObject Note at the random spawners' position
-        Instantiate(note, spawnPoints[index]);
+        GameObject prefabNote = Instantiate(note, spawnPoints[index]);
+        
+        prefabNote.GetComponent<SpriteRenderer>().sprite = joystickSymbols[index];
     }
 
 }

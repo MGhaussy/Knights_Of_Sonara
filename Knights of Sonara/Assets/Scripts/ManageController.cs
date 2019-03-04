@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ManageController : MonoBehaviour
@@ -41,26 +42,28 @@ public class ManageController : MonoBehaviour
     {
         string[] controllers = Input.GetJoystickNames();
 
-        for (int i = 0; i < controllers.Length; i++)
+        bool allControllersNull = controllers.All(s => s == "");
+
+        if (Input.GetJoystickNames().Length > 0 && !allControllersNull)
         {
-            if (!string.IsNullOrEmpty(controllers[i]))
-            {
-                //controller connected
-                IsControllerConnected = true;
-                Debug.Log("Controller " + i + " is connected using: " + controllers[i]);
-            }
-            else
-            {
-                //controller disconnected
-                isControllerConnected = false;
-                Debug.Log("Controller " + i + " is disconnected");
-            }
+             //controller connected
+             IsControllerConnected = true;
+             Debug.Log("Controller is connected");
         }
+        else
+        {
+            //controller disconnected
+            IsControllerConnected = false;
+             Debug.Log("Controller is disconnected");
+        }
+
+        //switchKeys();
+
     }
 
     private void switchKeys()
     {
-        if (isControllerConnected)
+        if (IsControllerConnected)
         {
             KeysToUse = new List<string>(controllerKeys);
         }

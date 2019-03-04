@@ -213,6 +213,12 @@ MonoBehaviour:
   row3: {fileID: 734748419}
   row4: {fileID: 1509241162}
   row5: {fileID: 1504768800}
+  joystickSymbols:
+  - {fileID: 21300000, guid: b683c2eaf8e371a4bab23ef786877374, type: 3}
+  - {fileID: 21300000, guid: f2ffb268456afae478d0634f4779788e, type: 3}
+  - {fileID: 21300000, guid: 24120ce0543f78247b59bd8ddf9895f0, type: 3}
+  - {fileID: 21300000, guid: 694d4d91185eb024b839017b3cfa174d, type: 3}
+  - {fileID: 21300000, guid: 4fc801da625b9ce4895de4467c594c0f, type: 3}
 --- !u!114 &110393640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,11 +345,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
-    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.44
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
@@ -355,6 +356,11 @@ PrefabInstance:
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox D
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 4542308294019294, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -872,11 +878,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
-    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.44
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
@@ -888,6 +889,11 @@ PrefabInstance:
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox E
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 4542308294019294, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -954,11 +960,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
-    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.44
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
@@ -970,6 +971,11 @@ PrefabInstance:
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox B
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 4542308294019294, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1244,11 +1250,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
-    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.44
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
@@ -1260,6 +1261,11 @@ PrefabInstance:
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox A
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 4542308294019294, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1521,11 +1527,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1012928474}
     m_Modifications:
-    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.44
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
@@ -1537,6 +1538,11 @@ PrefabInstance:
     - target: {fileID: 1107293482886084, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_Name
       value: Note Hitbox C
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900256414465472379, guid: d482a2fd39c21e6459d177d0bece791f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 4542308294019294, guid: d482a2fd39c21e6459d177d0bece791f, type: 3}
       propertyPath: m_LocalPosition.x
