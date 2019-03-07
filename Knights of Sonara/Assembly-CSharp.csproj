@@ -61,7 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\FightWindowManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\MainUIManager.cs" />
     <Compile Include="Assets\Scripts\ManageController.cs" />
     <Compile Include="Assets\Scripts\NoteHit.cs" />
     <Compile Include="Assets\Scripts\NoteSpawnerScript.cs" />
